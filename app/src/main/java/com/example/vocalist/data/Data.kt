@@ -6,8 +6,8 @@ object Data {
     val dummyData = listOf(
         Vocalist(
             1,
-            "James Hetfield",
-            "James Alan Hetfield",
+            "Hniaf",
+            "James ",
             R.drawable.taka,
             "Metallica",
             "August 3rd, 1963",
