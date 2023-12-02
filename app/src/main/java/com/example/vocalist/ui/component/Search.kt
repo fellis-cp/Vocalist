@@ -1,6 +1,6 @@
 package com.example.vocalist.ui.component
 
-import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -42,7 +42,7 @@ fun Search(
         shape = MaterialTheme.shapes.large,
         modifier = modifier
             .padding(8.dp)
-            .fillMaxHeight()
+            .fillMaxWidth()
             .heightIn(48.dp)
     ) {}
 }
