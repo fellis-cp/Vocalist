@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MyVocalist</string>
+    <string name="search_hint">Cari\n</string>
+    <string name="back">Kembali\n</string>
+    <string name="kembali">Kembali\n</string>
+    <string name="detail">Halaman Detail \n</string>
+    <string name="full_name">Nama: %s</string>
+    <string name="band">Band : %s</string>
+    <string name="birthdate">Tanggal Lahir : %s</string>
+    <string name="genre">Genre</string>
+    <string name="description">Deskripsi :</string>
+    <string name="favorite_button">Tombol Favorite\n</string>
+    <string name="namaku">M.Hanif Fajar Anggara\n</string>
+    <string name="gmail">hanifanggara1@gmail.com\n</string>
+    <string name="favo">favorite\n</string>
+    <string name="home">Home\n</string>
+    <string name="profile">Profile\n</string>
+    <string name="main_screen">Halaman Utama</string>
+    <string name="my_favorite">Favoritku</string>
+    <string name="my_profile">Profilku</string>
+</resources>
