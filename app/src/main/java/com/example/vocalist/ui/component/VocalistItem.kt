@@ -34,8 +34,8 @@ fun VocalistItem(
         ) {
             AsyncImage(
                 model = picture,
-                contentDescription = null,
                 contentScale = ContentScale.Crop,
+                contentDescription = null,
                 modifier = Modifier.size(120.dp, 120.dp).clip(CircleShape)
             )
             WidthSpacer(8.dp)

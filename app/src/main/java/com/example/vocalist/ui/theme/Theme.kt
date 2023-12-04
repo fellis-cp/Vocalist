@@ -31,8 +31,8 @@ private val LightColorScheme = lightColorScheme(
 
 @Composable
 fun MyVocalistComposeAppTheme(
-    darkTheme: Boolean = isSystemInDarkTheme(),
     dynamicColor: Boolean = true,
+    darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
@@ -54,8 +54,8 @@ fun MyVocalistComposeAppTheme(
     }
 
     MaterialTheme(
-        colorScheme = colorScheme,
         typography = Typography,
+        colorScheme = colorScheme,
         content = content
     )
 }

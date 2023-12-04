@@ -136,8 +136,9 @@ fun BottomBar(
                         popUpTo(navHostController.graph.findStartDestination().id) {
                             saveState = true
                         }
-                        restoreState = true
+
                         launchSingleTop = true
+                        restoreState = true
                     }
                 },
                 icon = {

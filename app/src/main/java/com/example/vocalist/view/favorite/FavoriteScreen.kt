@@ -23,6 +23,7 @@ fun FavoriteScreen(
             }
 
 
+
             is UiState.Success -> {
                 val favoriteVocalist = uiState.data
                 VocalistList(vocalist = favoriteVocalist, navigateToDetail = navigateToDetail)

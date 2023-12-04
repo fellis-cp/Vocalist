@@ -26,8 +26,9 @@ fun MyTopAppBar(
     TopAppBar(
         title = { Text(stringResource(screenName)) },
         colors = TopAppBarDefaults.topAppBarColors(
-            containerColor = MaterialTheme.colorScheme.primaryContainer,
-            titleContentColor = MaterialTheme.colorScheme.primary
+            titleContentColor = MaterialTheme.colorScheme.primary,
+            containerColor = MaterialTheme.colorScheme.primaryContainer
+
         ),
         navigationIcon = {
             IconButton(onClick = { onBackClick() }) {

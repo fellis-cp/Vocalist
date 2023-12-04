@@ -17,7 +17,8 @@ fun VocalistList(
     navigateToDetail: (Long) -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    Surface(color = MaterialTheme.colorScheme.background, modifier = Modifier.fillMaxSize()) {
+    Surface(color = MaterialTheme.colorScheme.background,
+        modifier = Modifier.fillMaxSize()) {
         LazyColumn(
             modifier.testTag("VocalistList")
         ) {

@@ -53,8 +53,9 @@ fun DetailContent(
         MyTopAppBar(screenName = R.string.detail, onBackClick)
         Column(
             modifier = Modifier
-                .verticalScroll(rememberScrollState())
                 .padding(10.dp)
+                .verticalScroll(rememberScrollState())
+
         ) {
             Column {
                 Box(
@@ -68,23 +69,27 @@ fun DetailContent(
                             painter = painterResource(
                                 id = if (isVocalistSaved) R.drawable.baseline_star_24 else R.drawable.baseline_star_border_purple500_24
                             ),
-                            tint = if (isVocalistSaved) Color.Red else Color.Gray,
                             contentDescription = stringResource(R.string.favorite_button),
+                            tint = if (isVocalistSaved) Color.Red else Color.Gray,
+
                         )
                     }
                     Text(
                         text = name,
-                        modifier = Modifier.align(Alignment.Center),
                         style = Typography.titleLarge,
+                        modifier = Modifier.align(Alignment.Center),
                     )
                 }
             }
             HeightSpacer(height = 16.dp)
             AsyncImage(
                 model = picture, contentDescription = name, modifier = Modifier
-                    .size(300.dp)
+                    .size(250.dp)
                     .align(Alignment.CenterHorizontally)
+                    .padding(14.dp)
                     .clip(CircleShape)
+
+
             )
             HeightSpacer(height = 16.dp)
             Text(

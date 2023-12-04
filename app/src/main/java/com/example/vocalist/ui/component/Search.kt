@@ -29,11 +29,11 @@ fun Search(
         color = Color.Cyan
     ) {
         SearchBar(
-            query = query,
-            onQueryChange = onQueryChange,
             onSearch = {},
             active = false,
             onActiveChange = {},
+            query = query,
+            onQueryChange = onQueryChange,
             leadingIcon = {
                 Icon(
                     imageVector = Icons.Default.Search,
@@ -46,9 +46,9 @@ fun Search(
             },
             shape = MaterialTheme.shapes.large,
             modifier = modifier
-                .padding(8.dp)
                 .fillMaxWidth()
                 .heightIn(48.dp)
+                .padding(8.dp)
 
         ) {}
     }
