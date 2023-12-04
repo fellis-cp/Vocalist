@@ -6,104 +6,105 @@ object Data {
     val dummyData = listOf(
         Vocalist(
             1,
-            "Hniaf",
-            "James ",
+            "Taka Moriuchi",
+            "Taka Moriuchi",
             R.drawable.taka,
-            "Metallica",
-            "August 3rd, 1963",
-            "Rythm Guitar",
-            "James Alan Hetfield is an American musician. He is the lead vocalist, rhythm guitarist, co-founder, and a primary songwriter of heavy metal band Metallica. He is mainly known for his intricate rhythm playing, but occasionally performs lead guitar duties and solos both live and in the studio."
+            "One Ok Rock",
+            " April 17, 1988 ",
+            "Alternative rock ",
+            "Takahiro Moriuchi (Japanese: 森内 貴寛, Hepburn: Moriuchi Takahiro, born April 17, 1988, in Tokyo), known professionally as Taka, is a Japanese singer and musician who is the lead vocalist of the Japanese rock band One Ok Rock. Moriuchi is the band's main lyricist and composer."
         ),
         Vocalist(
             2,
-            "Dave Mustaine",
-            "David Scott Mustaine",
+            "Lilas Ikuta",
+            "Lilas Ikuta",
             R.drawable.lilas,
-            "Megadeth",
-            "September 13, 1961",
-            "Rythm Guitar",
-            "David Scott Mustaine is an American musician. He is the co-founder, frontman, primary songwriter and sole consistent member of the thrash metal band Megadeth."
+            "Yoasobi",
+            "September 25 , 2000",
+            "J-Pop",
+            "Lilas Ikuta (幾田りら, Ikuta Rira, born September 25, 2000) is a Japanese singer and songwriter. She is best known as the vocalist of the duo Yoasobi with producer Ayase, under the stage name Ikura, and a former member of the cover group Plusonica."
         ),
         Vocalist(
             3,
-            "Kirk Hammett",
-            "Kirk Lee Hammett",
+            "Iwan Falls",
+            "Iwan Falls",
             R.drawable.iwan,
-            "Metallica",
+            "Iwan Falls",
             "November 18, 1963",
-            "Lead Guitar",
-            "Kirk Lee Hammett is an American musician who has been the lead guitarist of heavy metal band Metallica since 1983. Prior to joining Metallica, he co-formed the thrash metal band Exodus in 1979. In 2003, Hammett was ranked 11th on Rolling Stone\'s list of The 100 Greatest Guitarists of All Time."
+            "Country , Pop",
+            "Virgiawan Listanto or better known as Iwan Fals (born 3 September 1961) is an Indonesian singer, songwriter and guitarist of Javanese descent. In 2002, Time named him a Great Asian Hero."
         ),
         Vocalist(
             4,
-            "Marty Friedman",
-            "Marty Adam Friedman",
+            "Chester Bennington",
+            "Chester Bennington",
             R.drawable.chester,
-            "Megadeth",
-            "December 8th, 1962",
-            "Lead Guitar",
-            "Martin Adam Friedman is an American guitarist, best known for his tenure as the lead guitarist for thrash metal band Megadeth from 1990 to 2000. He is also known for playing alongside Jason Becker in Cacophony from 1986 until 1989, as well as his 13 solo albums and tours."
+            "Linkin Park",
+            "March 20, 1976",
+            "Alternative rock ",
+            "Chester Charles Bennington (March 20, 1976 – July 20, 2017) was an American singer and songwriter who served as the lead vocalist of rock band Linkin Park. He was also a lead vocalist of Grey Daze, Dead by Sunrise and Stone Temple Pilots at various points."
         ),
         Vocalist(
             5,
-            "Dimebag Darrell",
-            "Darrell Lance Abbott",
+            "Ariel Noah ",
+            "Nazril Irham",
             R.drawable.ariel,
-            "Pantera",
-            "Rythm/Lead Guitar",
-            "August 20, 1966",
-            "Darrell Lance Abbott, best known by his stage name Dimebag Darrell, was an American musician. He was the guitarist of the heavy metal bands Pantera and Damageplan, both of which he co-founded alongside his brother Vinnie Paul. He is considered by many to be one of the greatest metal guitarists of all time."
+            "Noah",
+            "September 16 , 1981",
+            "Pop , Alternative Rock",
+            "Nazril Irham (born 16 September 1981), known professionally as Ariel or Ariel \"Noah\", is an Indonesian musician, singer and songwriter of Minangkabau ancestry. He is the lead singer of Indonesian band Noah, formerly known as Peterpan."
         ),
         Vocalist(
             6,
-            "Daniela Villarreal",
-            "Daniela Villarreal Velez",
+            "Freddie Mercury",
+            "Freddie Mercury",
             R.drawable.freedie,
-            "The Warning",
-            "January 30, 2000",
-            "Rythm/Lead Guitar",
-            "Daniela \"Dany\" Villarreal is the lead guitarist and vocalist for Mexican power trio, The Warning. The band, consisting of Dany and her sisters Paulina (drums) and Alejandra (bass) initially rose to prominence after their cover of Metallica’s “Enter Sandman” went viral back in 2014. That clip has since racked up well over twenty-three million views on YouTube. Capitalizing on that momentum, The Warning began writing original material and have since produced three studio albums and one EP. The band has just kicked off the “Mayday Tour” in support of their latest release."
+            "Queen",
+            "September 5, 1946",
+            "Rock",
+            "Freddie Mercury (born Farrokh Bulsara; 5 September 1946 – 24 November 1991)[2] was a British singer and songwriter who achieved worldwide fame as the lead vocalist and pianist of the rock band Queen. Regarded as one of the greatest singers in the history of rock music, he was known for his flamboyant stage persona and four-octave vocal range. Mercury defied the conventions of a rock frontman with his theatrical style, influencing the artistic direction of Queen."
         ),
         Vocalist(
             7,
-            "Alexi Laiho",
-            "Markuu Ulla Aleksi Laiho",
+            "Chris Martin",
+            "Christopher Anthony John Martin",
             R.drawable.chris,
-            "Children of Boddom",
-            "April 8, 1978",
-            "Rythm Guitar",
-            "Alexi Laiho was a Finnish guitarist, composer, and vocalist. He was best known as the lead guitarist, lead vocalist and founding member of the melodic death metal band Children of Bodom, and was also the guitarist for Sinergy, the Local Band, Kylähullut, and Bodom After Midnight, which formed just prior to his death."
+            "Coldplay",
+            "March 2, 1997",
+            "Pop Rock , Alternative Rock  ",
+            "Christopher Anthony John Martin (born 2 March 1977) is an English singer, songwriter, musician and philanthropist. He is best known as the lead vocalist, pianist, rhythm guitarist and co-founder of the rock band Coldplay."
         ),
         Vocalist(
             8,
-            "Eddie van Halen",
-            "Edward Lodewijk Van Halen",
+            "Hyde",
+            "Takarai Hideto",
             R.drawable.takahiro,
-            "Van Halen",
-            "January 26, 1955",
-            "Lead Guitar",
-            "Edward Lodewijk Van Halen was an American musician. He was the guitarist, keyboardist, backing vocalist, and primary songwriter of the rock band Van Halen, which he founded with his brother Alex in 1972."
+            "L'Arc~en~Ciel",
+            "January 29, 1969",
+            "J-rock",
+            "Hideto Takarai (寶井 秀人, Takarai Hideto, born January 29, 1969, in Wakayama, Japan),[1] known by his stage name Hyde (stylized as HYDE or hyde), is a Japanese musician, singer-songwriter, record producer, and actor. Best known as the lead vocalist of the rock band L'Arc-en-Ciel since 1991, he is also the lead vocalist of Vamps and has a solo career."
 
         ),
         Vocalist(
             9,
-            "Mick Thomson",
-            "Mickael Gordon Thomson",
+            "Yojiro Noda ",
+            "Yojiro Noda",
             R.drawable.noda,
-            "Slipknot",
-            "November 3, 1973",
-            "Lead Guitar",
-            "Mickael Gordon \"Mick\" Thomson is an American musician. He is one of two guitarists for the heavy metal band Slipknot, in which he is designated #7."
+            "Radwimps",
+            "July 5, 1985",
+            "Alternative Rock",
+            "Yojiro Noda (野田洋次郎, Noda Yōjirō, born July 5, 1985), is a Japanese singer, songwriter, musician, record producer and actor. Noda is the lead vocalist, songwriter and guitarist of the Japanese rock band Radwimps and also began a solo project, Illion, in 2012."
         ),
         Vocalist(
             10,
-            "Jim Root",
-            "James Donald Root",
+            "Robert Plant",
+            "Robert Plant",
             R.drawable.robert,
-            "Slipknot",
-            "October 2, 1971",
-            "Rythm Guitar",
-            "James Donald Root is an American guitarist. He is one of two guitarists for heavy metal band Slipknot, in which he is designated #4, as well as the former lead guitarist for rock band Stone Sour."
+            "Led Zeppelin",
+            "20 Agustus , 1948",
+            "Rock",
+            "Robert Anthony Plant CBE (born 20 August 1948) is an English singer and songwriter. He was the lead singer and lyricist of the rock band Led Zeppelin from its founding in 1968 until their breakup in 1980; since then he has had a successful solo career, sometimes collaborating with other artists such as Alison Krauss. Regarded by many as one of the greatest singers in rock music, he is known for his flamboyant persona and raw stage performances.\n" +
+                    "\n"
         )
     )
 }

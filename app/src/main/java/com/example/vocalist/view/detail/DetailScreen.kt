@@ -112,7 +112,7 @@ fun DetailContent(
                     ) {
                         Icon(
                             painter = painterResource(
-                                id = if (isVocalistSaved) R.drawable.baseline_favorite_24 else R.drawable.baseline_favorite_border_24
+                                id = if (isVocalistSaved) R.drawable.baseline_star_24 else R.drawable.baseline_star_border_purple500_24
                             ),
                             tint = if (isVocalistSaved) Color.Red else Color.Gray,
                             contentDescription = stringResource(R.string.favorite_button),

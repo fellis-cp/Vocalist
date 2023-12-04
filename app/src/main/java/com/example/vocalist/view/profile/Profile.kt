@@ -26,7 +26,7 @@ fun Profile() {
     )
     {
         AsyncImage(
-            model = R.drawable.lilas,
+            model = R.drawable.hanif,
             contentDescription = stringResource(R.string.namaku),
             Modifier
                 .size(250.dp)
@@ -36,11 +36,11 @@ fun Profile() {
         )
         Text(
             stringResource(R.string.namaku),
-            style = Typography.titleLarge
+            style = Typography.titleMedium
         )
         Text(
             stringResource(R.string.gmail),
-            style = Typography.titleMedium)
+            style = Typography.titleSmall)
 
     }
 }

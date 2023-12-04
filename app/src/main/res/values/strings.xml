@@ -7,7 +7,7 @@
     <string name="full_name">Nama: %s</string>
     <string name="band">Band : %s</string>
     <string name="birthdate">Tanggal Lahir : %s</string>
-    <string name="genre">Genre</string>
+    <string name="genre">Genre : %s</string>
     <string name="description">Deskripsi :</string>
     <string name="favorite_button">Tombol Favorite\n</string>
     <string name="namaku">M.Hanif Fajar Anggara\n</string>
