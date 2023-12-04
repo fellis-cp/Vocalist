@@ -3,9 +3,9 @@ package com.example.vocalist.view
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Person
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -110,14 +110,15 @@ fun BottomBar(
     modifier: Modifier = Modifier
 ) {
     NavigationBar(
-        modifier = modifier.background(color = Color.Cyan) // Change the background color of the bottom bar here
+        modifier = modifier.background(color = Color.Cyan)
     ) {
+
         val navBackStackEntry by navHostController.currentBackStackEntryAsState()
         val currentRoute = navBackStackEntry?.destination?.route
 
         val navigationItem = listOf(
             NavigationItem(
-                icon = Icons.Default.Favorite,
+                icon = Icons.Default.Star,
                 screen = Screen.Favorite
             ),
             NavigationItem(
