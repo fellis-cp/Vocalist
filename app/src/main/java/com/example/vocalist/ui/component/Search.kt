@@ -9,6 +9,7 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.SearchBar
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -24,27 +25,31 @@ fun Search(
     onQueryChange: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    SearchBar(
-        query = query,
-        onQueryChange = onQueryChange,
-        onSearch = {},
-        active = false,
-        onActiveChange = {},
-        leadingIcon = {
-            Icon(
-                imageVector = Icons.Default.Search,
-                contentDescription = null,
-                tint = Color.Blue
-            )
-        },
-        placeholder = {
-            Text(text = stringResource(R.string.search_hint))
-        },
-        shape = MaterialTheme.shapes.large,
-        modifier = modifier
-            .padding(8.dp)
-            .fillMaxWidth()
-            .heightIn(48.dp)
+    Surface(
+        color = Color.Cyan
+    ) {
+        SearchBar(
+            query = query,
+            onQueryChange = onQueryChange,
+            onSearch = {},
+            active = false,
+            onActiveChange = {},
+            leadingIcon = {
+                Icon(
+                    imageVector = Icons.Default.Search,
+                    contentDescription = null,
+                    tint = Color.Blue
+                )
+            },
+            placeholder = {
+                Text(text = stringResource(R.string.search_hint))
+            },
+            shape = MaterialTheme.shapes.large,
+            modifier = modifier
+                .padding(8.dp)
+                .fillMaxWidth()
+                .heightIn(48.dp)
 
-    ) {}
+        ) {}
+    }
 }

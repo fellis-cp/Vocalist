@@ -18,4 +18,5 @@
     <string name="main_screen">Halaman Utama</string>
     <string name="my_favorite">Favoritku</string>
     <string name="my_profile">Profilku</string>
+    <string name="gmailku">"Email Dicoding : "</string>
 </resources>

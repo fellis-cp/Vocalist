@@ -20,7 +20,7 @@ abstract class VocalistDb: RoomDatabase() {
                 synchronized(VocalistDb::class.java) {
                     INSTANCE = Room.databaseBuilder(
                         context.applicationContext,
-                        VocalistDb::class.java, "favorite_database"
+                        VocalistDb::class.java, "Vocalist"
                     ).fallbackToDestructiveMigration().build()
                 }
             }
