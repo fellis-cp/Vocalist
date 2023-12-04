@@ -3,7 +3,7 @@
     <string name="search_hint">Cari\n</string>
     <string name="back">Kembali\n</string>
     <string name="kembali">Kembali\n</string>
-    <string name="detail">Halaman Detail \n</string>
+    <string name="detail">Detail \n</string>
     <string name="full_name">Nama: %s</string>
     <string name="band">Band : %s</string>
     <string name="birthdate">Tanggal Lahir : %s</string>
