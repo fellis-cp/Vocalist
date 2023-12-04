@@ -13,14 +13,14 @@ interface DataDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(favoriteVocalist: Vocalist)
 
-    @Delete
-    suspend fun delete(favoriteVocalist: Vocalist)
+    @Query("SELECT * FROM Vocalist")
+    suspend fun getAllVocalist(): List<Vocalist>
 
     @Update
     suspend fun update(favoriteVocalist: Vocalist)
 
-    @Query("SELECT * FROM Vocalist")
-    suspend fun getAllVocalist(): List<Vocalist>
+    @Delete
+    suspend fun delete(favoriteVocalist: Vocalist)
 
     @Query("SELECT EXISTS(SELECT * FROM Vocalist WHERE vocalist.id = :vocalistId)")
     fun isFavorite(vocalistId: Long): Boolean

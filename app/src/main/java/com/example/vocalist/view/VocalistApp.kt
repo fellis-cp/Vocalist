@@ -1,5 +1,6 @@
 package com.example.vocalist.view
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
@@ -17,6 +18,7 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavGraph.Companion.findStartDestination
@@ -108,29 +110,26 @@ fun BottomBar(
     modifier: Modifier = Modifier
 ) {
     NavigationBar(
-        modifier = modifier
+        modifier = modifier.background(color = Color.Cyan) // Change the background color of the bottom bar here
     ) {
         val navBackStackEntry by navHostController.currentBackStackEntryAsState()
         val currentRoute = navBackStackEntry?.destination?.route
 
         val navigationItem = listOf(
             NavigationItem(
-                title = stringResource(R.string.favo),
                 icon = Icons.Default.Favorite,
                 screen = Screen.Favorite
             ),
             NavigationItem(
-                title = stringResource(R.string.home),
                 icon = Icons.Default.Home,
                 screen = Screen.Main
             ),
             NavigationItem(
-                title = stringResource(R.string.profile),
                 icon = Icons.Default.Person,
                 screen = Screen.Profile
             )
         )
-        navigationItem.map { item ->
+        navigationItem.forEach { item ->
             NavigationBarItem(
                 selected = currentRoute == item.screen.route,
                 onClick = {
@@ -141,10 +140,11 @@ fun BottomBar(
                         restoreState = true
                         launchSingleTop = true
                     }
-                }, icon = {
-                    Icon(imageVector = item.icon, contentDescription = item.title)
                 },
-                label = { Text(item.title)},)
+                icon = {
+                    Icon(imageVector = item.icon, contentDescription = null)
+                }
+            )
         }
     }
 }

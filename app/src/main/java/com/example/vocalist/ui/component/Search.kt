@@ -12,6 +12,7 @@ import androidx.compose.material3.SearchBar
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.vocalist.R
@@ -33,7 +34,7 @@ fun Search(
             Icon(
                 imageVector = Icons.Default.Search,
                 contentDescription = null,
-                tint = MaterialTheme.colorScheme.onSurfaceVariant
+                tint = Color.Blue
             )
         },
         placeholder = {
@@ -44,5 +45,6 @@ fun Search(
             .padding(8.dp)
             .fillMaxWidth()
             .heightIn(48.dp)
+
     ) {}
 }
