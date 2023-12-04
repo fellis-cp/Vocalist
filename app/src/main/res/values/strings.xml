@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">MyVocalist</string>
-    <string name="search_hint">Cari\n</string>
+    <string name="search_hint">Cari vocalist favoritmu\n</string>
     <string name="back">Kembali\n</string>
     <string name="kembali">Kembali\n</string>
     <string name="detail">Detail \n</string>
