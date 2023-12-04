@@ -20,12 +20,8 @@ class DetailViewModel (private val repository: Repository) : ViewModel() {
     private val _isVocalistSaved = MutableStateFlow(false)
     val isVocalistSaved : StateFlow<Boolean> get() = _isVocalistSaved
 
-    fun getVocalistById(vocalistId: Long) {
-        viewModelScope.launch {
-            _uiState.value = UiState.Loading
-            _uiState.value = UiState.Success(repository.getVocalistId(vocalistId))
-        }
-    }
+
+
     fun isFavorite(vocalistId: Long) {
         viewModelScope.launch(Dispatchers.IO) {
             _isVocalistSaved.value = repository.isFavorite(vocalistId)
@@ -45,4 +41,12 @@ class DetailViewModel (private val repository: Repository) : ViewModel() {
             repository.saveFavVocalist(favoriteVocalist)
         }
     }
+
+    fun getVocalistById(vocalistId: Long) {
+        viewModelScope.launch {
+            _uiState.value = UiState.Loading
+            _uiState.value = UiState.Success(repository.getVocalistId(vocalistId))
+        }
+    }
+
 }

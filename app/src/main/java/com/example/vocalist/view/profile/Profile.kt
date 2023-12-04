@@ -21,8 +21,7 @@ import com.example.vocalist.ui.theme.Typography
 @Composable
 fun Profile() {
     Surface(
-        color = Color.Cyan, // Ganti dengan warna yang diinginkan
-        modifier = Modifier.fillMaxSize()
+        color = Color.Cyan, modifier = Modifier.fillMaxSize()
     ) {
         Column(
             Modifier.padding(14.dp),

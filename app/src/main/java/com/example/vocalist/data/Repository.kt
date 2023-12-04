@@ -13,6 +13,15 @@ class Repository(private val favoriteVocalistDao: DataDao){
         }
     }
 
+    suspend fun delete (favoriteVocalist: Vocalist){
+        favoriteVocalistDao.delete(favoriteVocalist)
+    }
+
+    suspend fun getFavVocalist() : List<Vocalist> {
+        return favoriteVocalistDao.getAllVocalist()
+    }
+
+
     fun getVocalist () : List <Vocalist> {
         return vocalist
     }
@@ -31,14 +40,6 @@ class Repository(private val favoriteVocalistDao: DataDao){
 
     suspend fun saveFavVocalist(favoriteVocalist : Vocalist) {
         favoriteVocalistDao.insert(favoriteVocalist)
-    }
-
-    suspend fun delete (favoriteVocalist: Vocalist){
-        favoriteVocalistDao.delete(favoriteVocalist)
-    }
-
-    suspend fun getFavVocalist() : List<Vocalist> {
-        return favoriteVocalistDao.getAllVocalist()
     }
 
     fun isFavorite(vocalistId: Long) : Boolean =

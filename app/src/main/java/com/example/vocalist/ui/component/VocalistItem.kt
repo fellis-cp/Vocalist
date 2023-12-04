@@ -36,7 +36,7 @@ fun VocalistItem(
                 model = picture,
                 contentDescription = null,
                 contentScale = ContentScale.Crop,
-                modifier = Modifier.size(130.dp, 130.dp).clip(CircleShape)
+                modifier = Modifier.size(120.dp, 120.dp).clip(CircleShape)
             )
             WidthSpacer(8.dp)
             Column(modifier = Modifier.weight(1f)) {

@@ -22,12 +22,13 @@ fun FavoriteScreen(
                 viewModel.getFavoriteVocalist()
             }
 
-            is UiState.Error -> {}
 
             is UiState.Success -> {
                 val favoriteVocalist = uiState.data
                 VocalistList(vocalist = favoriteVocalist, navigateToDetail = navigateToDetail)
             }
+
+            is UiState.Error -> {}
         }
     }
 }

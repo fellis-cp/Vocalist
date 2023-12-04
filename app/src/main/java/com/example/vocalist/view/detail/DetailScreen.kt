@@ -23,7 +23,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.compose.AsyncImage
@@ -33,54 +32,9 @@ import com.example.vocalist.factory.ViewModelFactory
 import com.example.vocalist.ui.UiState
 import com.example.vocalist.ui.component.HeightSpacer
 import com.example.vocalist.ui.component.MyTopAppBar
-import com.example.vocalist.ui.theme.MyVocalistComposeAppTheme
 import com.example.vocalist.ui.theme.Typography
 
-@Composable
-fun DetailScreen(
-    vocalistId: Long,
-    viewModel: DetailViewModel = viewModel(
-        factory = ViewModelFactory(
-            Injection.provideRepository(LocalContext.current)
-        )
-    ),
-    navigateBack: () -> Unit
-) {
-    val isVocalistSaved by viewModel.isVocalistSaved.collectAsState()
 
-    viewModel.uiState.collectAsState(initial = UiState.Loading).value.let { uiState ->
-        when (uiState) {
-            is UiState.Loading -> {
-                viewModel.getVocalistById(vocalistId)
-                viewModel.isFavorite(vocalistId)
-            }
-
-            is UiState.Error -> {}
-
-            is UiState.Success -> {
-                val data = uiState.data
-                DetailContent(
-                    name = data.name,
-                    fullname = data.fullname,
-                    picture = data.picture,
-                    band = data.band,
-                    birthdate = data.birthdate,
-                    genre = data.genre,
-                    description = data.description,
-                    isVocalistSaved,
-                    setFavorite = {
-                        if (!isVocalistSaved) {
-                            viewModel.saveSavedVocalist(data)
-                        } else {
-                            viewModel.deleteSavedVocalist(data)
-                        }
-                    },
-                    onBackClick = navigateBack
-                )
-            }
-        }
-    }
-}
 
 @Composable
 fun DetailContent(
@@ -164,12 +118,53 @@ fun DetailContent(
     }
 }
 
-@Preview(showBackground = true)
+
+
 @Composable
-fun DetailScreenPreview() {
-    MyVocalistComposeAppTheme {
-        DetailScreen(vocalistId = 6) {
+fun DetailScreen(
+    vocalistId: Long,
+    viewModel: DetailViewModel = viewModel(
+        factory = ViewModelFactory(
+            Injection.provideRepository(LocalContext.current)
+        )
+    ),
+    navigateBack: () -> Unit
+) {
+    val isVocalistSaved by viewModel.isVocalistSaved.collectAsState()
+
+    viewModel.uiState.collectAsState(initial = UiState.Loading).value.let { uiState ->
+        when (uiState) {
+            is UiState.Loading -> {
+                viewModel.getVocalistById(vocalistId)
+                viewModel.isFavorite(vocalistId)
+            }
+
+            is UiState.Error -> {}
+
+            is UiState.Success -> {
+                val data = uiState.data
+                DetailContent(
+                    name = data.name,
+                    fullname = data.fullname,
+                    picture = data.picture,
+                    band = data.band,
+                    birthdate = data.birthdate,
+                    genre = data.genre,
+                    description = data.description,
+                    isVocalistSaved,
+                    setFavorite = {
+                        if (!isVocalistSaved) {
+                            viewModel.saveSavedVocalist(data)
+                        } else {
+                            viewModel.deleteSavedVocalist(data)
+                        }
+                    },
+                    onBackClick = navigateBack
+                )
+            }
         }
     }
-
 }
+
+
+

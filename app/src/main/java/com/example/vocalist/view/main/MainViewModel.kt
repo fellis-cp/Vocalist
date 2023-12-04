@@ -19,6 +19,7 @@ class MainViewModel(private val repository: Repository): ViewModel() {
     val query: State<String> get() =_query
     fun search(newQuery: String) {
         _query.value = newQuery
+
         _filteredVocalist.value = repository.searchVocalist(_query.value)
             .sortedBy { it.name }
     }

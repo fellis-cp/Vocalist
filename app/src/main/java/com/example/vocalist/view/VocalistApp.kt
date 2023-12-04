@@ -20,7 +20,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
@@ -32,7 +31,6 @@ import androidx.navigation.navArgument
 import com.example.vocalist.R
 import com.example.vocalist.ui.nav.NavigationItem
 import com.example.vocalist.ui.nav.Screen
-import com.example.vocalist.ui.theme.MyVocalistComposeAppTheme
 import com.example.vocalist.view.detail.DetailScreen
 import com.example.vocalist.view.favorite.FavoriteScreen
 import com.example.vocalist.view.main.MainScreen
@@ -150,10 +148,3 @@ fun BottomBar(
     }
 }
 
-@Preview
-@Composable
-fun VocalistAppPreview() {
-    MyVocalistComposeAppTheme {
-        VocalistApp()
-    }
-}

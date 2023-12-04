@@ -29,7 +29,7 @@ object Data {
             "Iwan Falls",
             "Iwan Falls",
             R.drawable.iwan,
-            "Iwan Falls",
+            "-",
             "November 18, 1963",
             "Country , Pop",
             "Virgiawan Listanto or better known as Iwan Fals (born 3 September 1961) is an Indonesian singer, songwriter and guitarist of Javanese descent. In 2002, Time named him a Great Asian Hero."
