@@ -116,12 +116,12 @@ fun BottomBar(
 
         val navigationItem = listOf(
             NavigationItem(
-                icon = Icons.Default.Star,
-                screen = Screen.Favorite
-            ),
-            NavigationItem(
                 icon = Icons.Default.Home,
                 screen = Screen.Main
+            ),
+            NavigationItem(
+                icon = Icons.Default.Star,
+                screen = Screen.Favorite
             ),
             NavigationItem(
                 icon = Icons.Default.Person,
