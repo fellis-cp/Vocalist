@@ -142,7 +142,7 @@ fun BottomBar(
                     }
                 },
                 icon = {
-                    Icon(imageVector = item.icon, contentDescription = null)
+                    Icon(imageVector = item.icon, contentDescription = "about page")
                 }
             )
         }
